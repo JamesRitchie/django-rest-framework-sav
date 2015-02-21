@@ -21,7 +21,7 @@ matrix:
       env: DJANGO_VERSION=1.4.19
 
 install:
-  - pip install Django==$DJANGO_VERSION djangorestframework==3.05
+  - pip install Django==$DJANGO_VERSION djangorestframework==3.0.5
   - pip install coveralls
 script:
   coverage run --source=rest_framework_se runtests.py
