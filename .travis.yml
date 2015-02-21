@@ -9,7 +9,6 @@ env:
   - DJANGO_VERSION=1.4.19
   - DJANGO_VERSION=1.6.10
   - DJANGO_VERSION=1.7.4
-  - REST_FRAMEWORK_VERSION=3.0.5
 matrix:
   exclude:
     - python: "2.6"
@@ -22,7 +21,7 @@ matrix:
       env: DJANGO_VERSION=1.4.19
 
 install:
-  - pip install Django==$DJANGO_VERSION djangorestframework==$REST_FRAMEWORK_VERSION
+  - pip install Django==$DJANGO_VERSION djangorestframework==3.05
   - pip install coveralls
 script:
   coverage run --source=rest_framework_se runtests.py
