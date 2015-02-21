@@ -16,7 +16,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'rest_framework',
-    'rest_framework_se',
+    'rest_framework_sav',
     "tests",
 ]
 
