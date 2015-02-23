@@ -2,11 +2,13 @@
 import os
 import sys
 
-if __name__ == "__main__":
+
+def run():
+    """Run tests with Django setup."""
     os.environ['DJANGO_SETTINGS_MODULE'] = 'tests.settings'
     from django.conf import settings
 
-    # Will onlu work in 1.7
+    # Will only work in 1.7
     try:
         from django import setup
     except ImportError:
@@ -20,3 +22,6 @@ if __name__ == "__main__":
     test_runner = TestRunner()
     failures = test_runner.run_tests(["tests"])
     sys.exit(bool(failures))
+
+if __name__ == "__main__":
+    run()
