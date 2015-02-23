@@ -24,6 +24,6 @@ install:
   - pip install Django==$DJANGO_VERSION djangorestframework==3.0.5
   - pip install coveralls
 script:
-  coverage run --source=rest_framework_se runtests.py
+  coverage run --source=rest_framework_sav runtests.py
 after_success:
   coveralls
