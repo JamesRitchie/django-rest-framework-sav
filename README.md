@@ -22,7 +22,7 @@ and their compatible Python versions.
 Grab the package using PIP.
 
 ```zsh
-pip install --pre djangorestframework-sav
+pip install djangorestframework-sav
 ```
 
 Add `rest_framework_sav` to `INSTALLED_APPS` in `settings.py`.
