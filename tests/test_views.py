@@ -31,7 +31,7 @@ class SessionAuthViewTestCase(APITestCase):
             'django.contrib.auth.backends.ModelBackend'
         )
         self.assertEqual(
-            self.client.session['_auth_user_id'],
+            int(self.client.session['_auth_user_id']),
             self.user.id
         )
 
